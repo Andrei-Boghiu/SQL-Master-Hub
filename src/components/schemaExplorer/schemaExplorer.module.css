@@ -1,0 +1,10 @@
+.container {
+	padding: 20px;
+	border: 1px solid wheat;
+	height: 100%;
+	background-color: #141414;
+}
+
+.item {
+	margin-bottom: 10px;
+}

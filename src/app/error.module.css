@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	gap: 25px;
+	max-width: 680px;
+}
+
+.subtitle {
+	color: var(--btn);
+}
+
+.title {
+	font-size: 54px;
+}
+
+.desc {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.text {
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.link {
+	text-decoration: underline;
+}

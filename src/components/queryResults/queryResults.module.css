@@ -1,0 +1,25 @@
+.tableContainer {
+	background: #141414;
+	margin-top: 5px;
+	overflow: auto;
+	border: 1px solid wheat;
+	text-align: center;
+	font-size: 14px;
+	max-height: 300px;
+}
+
+.tableContainer th {
+	padding-right: 5px;
+	margin: 10px;
+	padding: 8px 10px 8px;
+	border: 1px solid var(--text);
+}
+
+.tableContainer td {
+	margin: 10px;
+	padding: 10px;
+}
+
+.tableContainer tbody tr:nth-child(odd) {
+	background: #232323;
+}

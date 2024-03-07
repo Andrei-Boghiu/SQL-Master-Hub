@@ -1,0 +1,32 @@
+.container {
+	margin-bottom: 10px;
+}
+
+.editor {
+	border: 1px solid wheat;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-start;
+	gap: 20px;
+}
+
+.button {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 5px;
+	cursor: pointer;
+	color: var(--bg);
+}
+
+.selectOption select {
+	border: none;
+	border-radius: 5px;
+	padding: 5px;
+	margin-top: 5px;
+	color: var(--bg);
+	background-color: whitesmoke;
+	font-size: 13px;
+}

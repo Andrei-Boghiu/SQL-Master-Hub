@@ -1,0 +1,17 @@
+.container {
+	display: flex;
+	/* max-width: 1536px; */
+	gap: 20px;
+}
+
+.schema {
+	/* width: calc(1536px / 4); */
+	width: calc(100% / 4);
+	height: calc(100vh - 190px);
+	overflow: auto;
+}
+
+.playground {
+	width: calc(100% - 25%);
+	/* width: calc(1536px - 25%); */
+}

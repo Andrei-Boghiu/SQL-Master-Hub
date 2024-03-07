@@ -3,11 +3,6 @@
 	gap: 100px;
 }
 
-.heroImg {
-	object-fit: contain;
-	animation: floatAnimation 5s infinite ease-in-out;
-}
-
 .textContainer {
 	flex: 1;
 	display: flex;
@@ -15,8 +10,17 @@
 	gap: 50px;
 }
 
+.imgContainer {
+	flex: 1;
+	position: relative;
+}
+
+.subtitle {
+	color: var(--btn);
+}
+
 .title {
-	font-size: 96px;
+	font-size: 54px;
 }
 
 .desc {
@@ -25,14 +29,9 @@
 	font-weight: 300;
 }
 
-.buttons {
-	display: flex;
-	gap: 20px;
-}
-
-.button:first-child {
-	background-color: var(--btn);
-	color: var(--text);
+.img {
+	object-fit: contain;
+	animation: floatAnimation 5s infinite ease-in-out;
 }
 
 .button {
@@ -45,16 +44,9 @@
 	border-radius: 5px;
 }
 
-.brands {
-	width: 500px;
-	height: 50px;
-	position: relative;
-	filter: grayscale(1);
-}
-
-.imgContainer {
-	flex: 1;
-	position: relative;
+.linkBtn {
+	color: var(--btn);
+	text-decoration: underline;
 }
 
 @keyframes floatAnimation {
@@ -69,22 +61,13 @@
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 	.container {
 		flex-direction: column;
 		text-align: center;
 	}
-
-	.buttons {
-		justify-content: center;
-	}
-}
-
-@media (max-width: 768px) {
-	.title {
-		font-size: 64px;
-	}
-	.brands {
-		width: 100%;
+	.boxes {
+		flex-direction: column;
+		gap: 50px;
 	}
 }
