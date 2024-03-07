@@ -7,8 +7,8 @@ const Home = () => {
 			<div className={styles.textContainer}>
 				<h1 className={styles.title}>SQL Master Hub</h1>
 				<p className={styles.desc}>
-					Embark on a Jedi's journey to SQL mastery! Our interactive galaxy awaits, where
-					you can hone your SQL skills through lightsaber-sharp challenges, tackle
+					Embark on a Jedi&apos;s journey to SQL mastery! Our interactive galaxy awaits,
+					where you can hone your SQL skills through lightsaber-sharp challenges, tackle
 					real-world data battles, and craft your own SQL saga. Become a SQL Jedi Knight
 					and let the Force guide you to a galaxy of data excellence! 🚀💻✨
 				</p>

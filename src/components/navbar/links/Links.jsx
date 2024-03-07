@@ -24,10 +24,8 @@ const routes = [
 	},
 ];
 
-const Links = ({ session }) => {
+const Links = () => {
 	const [open, setOpen] = useState(false);
-	// TEMP tile auth is ready
-	const isAdmin = true;
 
 	return (
 		<div className={styles.container}>

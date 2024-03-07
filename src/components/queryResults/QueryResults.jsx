@@ -67,7 +67,7 @@ const res = [
 	},
 ];
 
-const QueryResults = ({ result }) => {
+const QueryResults = () => {
 	// TO DO:
 	// * First check if there's no error
 	// * Make a logic to either show the error if theres and error, or the results
