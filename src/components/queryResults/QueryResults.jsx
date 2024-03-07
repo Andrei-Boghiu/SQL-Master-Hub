@@ -1,5 +1,6 @@
 import styles from "./queryResults.module.css";
 
+// Dummy data
 const res = [
 	{
 		id: 1,
@@ -67,7 +68,9 @@ const res = [
 ];
 
 const QueryResults = ({ result }) => {
-	// First check if there's no error
+	// TO DO:
+	// * First check if there's no error
+	// * Make a logic to either show the error if theres and error, or the results
 
 	if (!res) {
 		return <div className={styles.container}></div>;

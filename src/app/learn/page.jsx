@@ -3,6 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const LearnPage = () => {
+	// TO DO:
+	// * Add a summary of all chapters
+	// * User should be able to jump to any chapter
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.textContainer}>

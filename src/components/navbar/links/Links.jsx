@@ -19,7 +19,7 @@ const routes = [
 		path: "/learn",
 	},
 	{
-		title: "Practice",
+		title: "Practice Hub",
 		path: "/practice",
 	},
 ];
