@@ -4,6 +4,7 @@ import QueryEditor from "@/components/queryEditor/QueryEditor";
 import QueryResults from "@/components/queryResults/QueryResults";
 import SchemaExplorer from "@/components/schemaExplorer/schemaExplorer";
 import { useState } from "react";
+import executeFetchQuery from "@/database/practice/practice";
 
 const Practice = () => {
 	const [query, setQuery] = useState("");
@@ -13,11 +14,14 @@ const Practice = () => {
 		setQuery(newQuery);
 	};
 
-	const executeQuery = () => {
+	const executeQuery = async () => {
 		// Send query to main process for execution
 		// Receive and set results
-
+		const res = await executeFetchQuery(query);
 		console.log(query);
+
+		setQueryResult(res);
+
 		// window.ipcRenderer.send("execute-query", query);
 
 		// window.ipcRenderer.on("query-result", (event, result) => {
