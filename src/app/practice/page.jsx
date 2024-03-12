@@ -4,7 +4,7 @@ import QueryEditor from "@/components/queryEditor/QueryEditor";
 import QueryResults from "@/components/queryResults/QueryResults";
 import SchemaExplorer from "@/components/schemaExplorer/schemaExplorer";
 import { useState } from "react";
-import executeFetchQuery from "@/database/practice/practice";
+import { fetchQuery } from "@/lib/serverActions";
 
 const Practice = () => {
 	const [query, setQuery] = useState("");
@@ -15,18 +15,15 @@ const Practice = () => {
 	};
 
 	const executeQuery = async () => {
-		// Send query to main process for execution
-		// Receive and set results
-		const res = await executeFetchQuery(query);
 		console.log(query);
 
-		setQueryResult(res);
+		// const res = await fetch(`/api/executeQuery?query=${query}`);
+		const res = await fetchQuery(query);
 
-		// window.ipcRenderer.send("execute-query", query);
+		console.log(res);
+		// console.log({ rows, fields });
 
-		// window.ipcRenderer.on("query-result", (event, result) => {
-		// 	setQueryResult(result);
-		// });
+		// setQueryResult(res);
 	};
 
 	// To Also Add a Loader for when query is executing and waiting for response

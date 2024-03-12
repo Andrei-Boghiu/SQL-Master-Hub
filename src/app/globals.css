@@ -17,8 +17,8 @@
 }
 
 body {
-	background: rgb(2, 0, 36);
-	background: linear-gradient(120deg, #0d0c22 0%, #14123b 70%, #0d0c22 100%);
+	background: var(--bg);
+	/* background: linear-gradient(120deg, #0d0c22 0%, #14123b 70%, #0d0c22 100%); */
 	color: var(--text);
 }
 
