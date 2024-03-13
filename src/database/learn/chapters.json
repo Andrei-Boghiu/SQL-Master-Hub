@@ -9,7 +9,7 @@
 				"title": "Definition",
 				"descriptions": [
 					"A collection of data.",
-					"It&apos;s like a Phonebook with lots of names, addresses and phone numbers.",
+					"It's like a Phonebook with lots of names, addresses and phone numbers.",
 					"A method for accessing and manipulating method"
 				],
 				"practice": false,
@@ -255,7 +255,7 @@
 					"Select Distinct: used to return only different values.",
 					"Order By: used to sort the result-set in ascending or descending order.",
                     "Group By: groups rows that have the same values intro summary rows",
-                    "Having clause: used with aggregate functions as WHERE keyword can&apos;t be used with aggregate functions."
+                    "Having clause: used with aggregate functions as WHERE keyword can't be used with aggregate functions."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"

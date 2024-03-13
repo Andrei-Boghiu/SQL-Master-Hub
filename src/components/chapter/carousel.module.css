@@ -15,7 +15,6 @@
 	justify-content: space-around;
 	align-items: center;
 	border: none;
-	height: calc(100vh - 530px);
 }
 
 .content {
