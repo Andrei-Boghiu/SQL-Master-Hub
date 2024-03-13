@@ -1,23 +1,40 @@
 "use server";
-import { createClient } from "@vercel/postgres";
+const mysql = require("mysql2/promise");
 
-async function handleQuery(query) {
-	const client = createClient();
-	await client.connect();
+// To Replace with ENV
+const dbConfig = {
+    host: "localhost",
+    user: process.env.DB_PRACTICE_USER,
+    database: process.env.DB_PRACTICE_DATABASE,
+    password: process.env.DB_PRACTICE_PASSWORD,
+  };
 
-	try {
-		console.log(query);
-		//const check = query.toLowerCase().replace("select", "");
+export const executeFreeQuery = async (query) => {
+  
+    const connection = await mysql.createConnection(dbConfig);
+    let globalRes;
 
-		const res = await client.sql`SELECT * FROM Shippers;`;
-		console.log(res);
-	} catch (error) {
-		console.log(error);
-	} finally {
-		await client.end();
-	}
+  try {
+    const [results] = await connection.execute(`${query}`, [])
+    globalRes = results;
+  } catch (error) {
+    const data = JSON.stringify(error)
+    return data;
+  }
+
+
+    await connection.commit();
+    await connection.end();
+
+    return globalRes;
 }
+ 
+export const fetchSchemaResults = async () => {
+  const connection = await mysql.createConnection(dbConfig);
 
-export const fetchQuery = async (query) => {
-	return await handleQuery(query);
-};
+  const [results] = await connection.execute(`show tables from practice`, [])
+
+  await connection.commit();
+  await connection.end();
+	return results;
+}

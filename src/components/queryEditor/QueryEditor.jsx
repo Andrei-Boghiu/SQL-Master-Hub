@@ -2,6 +2,9 @@
 
 import AceEditor from "react-ace";
 import styles from "./queryEditor.module.css";
+
+import Spinner from "../loaders/Spinner";
+
 import "ace-builds/src-noconflict/mode-sql";
 import "ace-builds/src-noconflict/snippets/sql";
 import "ace-builds/src-min-noconflict/ext-language_tools";
@@ -13,12 +16,11 @@ import "ace-builds/src-min-noconflict/ext-language_tools";
 import "ace-builds/src-noconflict/theme-twilight";
 import { useState } from "react";
 
-const QueryEditor = ({ query, onQueryChange, executeQuery }) => {
+const QueryEditor = ({ query, onQueryChange, executeQuery, loading }) => {
 	const [fontSize, setFontSize] = useState(18);
 
 	const handleFontSizeChange = (e) => {
 		const newSize = Number(e.target.value);
-		// console.log();
 		setFontSize(newSize);
 	};
 
@@ -65,6 +67,7 @@ const QueryEditor = ({ query, onQueryChange, executeQuery }) => {
 						))}
 					</select>
 				</div>
+				{loading && <Spinner />}				
 			</div>
 		</div>
 	);

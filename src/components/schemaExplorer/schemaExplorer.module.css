@@ -1,10 +1,48 @@
 .container {
-	padding: 20px;
+	padding: 0;
 	border: 1px solid wheat;
 	height: 100%;
 	background-color: #141414;
 }
 
-.item {
-	margin-bottom: 10px;
+.head {
+	padding: 15px;
+	background-color: #2a2a2a;
+	border: solid #232323 3px;
+}
+
+.title {
+	margin: 0 12px 8px;
+
+}
+
+.desc {
+	margin: 0 14px 0;
+	font-size: small;
+	color: var(--border);
+
+
+}
+
+.tableList {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+
+}
+
+.table {
+	padding: 15px;
+	background-color: #2a2a2a;
+	border: solid #232323 1px;
+}
+
+.loadingContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.loading {
+	margin: 14px auto 0;
 }
