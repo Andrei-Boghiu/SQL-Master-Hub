@@ -27,6 +27,7 @@ const Practice = () => {
   const executeQuery = async () => {
 	setLoading(true)
     const res = await executeFreeQuery(query);
+	console.log(res)
     setQueryResult(res);
 	setLoading(false)
   };

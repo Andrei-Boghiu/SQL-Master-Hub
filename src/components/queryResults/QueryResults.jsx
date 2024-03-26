@@ -1,6 +1,10 @@
 "use client";
 import styles from "./queryResults.module.css";
 
+function formatDate(dataObj){
+  return dataObj.toLocaleString();
+}
+
 const QueryResults = ({ queryResults }) => {
   // in case no query was executed yet 
   if (!queryResults) {
@@ -13,6 +17,7 @@ const QueryResults = ({ queryResults }) => {
 
   // in case of query errors like syntax error 
   if (typeof queryResults === "string") {
+    console.log("data is string")
     const data = JSON.parse(queryResults);
 
     if (data.message) {
@@ -23,8 +28,8 @@ const QueryResults = ({ queryResults }) => {
         </>
       );
     } else {
-      console.log(queryResults);
-      console.log(data);
+      // console.log(queryResults);
+      // console.log(data);
 
       return (
         <>
@@ -45,6 +50,8 @@ const QueryResults = ({ queryResults }) => {
   // in case everything works as intended (not likely)
   const keys = Object.keys(queryResults[0]);
 
+  console.log("Data should be object")
+
   return (
     <div className={styles.container}>
       <h4>Query Results:</h4>
@@ -61,7 +68,7 @@ const QueryResults = ({ queryResults }) => {
             {queryResults.map((row, index) => (
               <tr key={index}>
                 {Object.keys(row).map((key, i) => (
-                  <td key={i}> {row[key]}</td>
+                  <td key={i}> {typeof row[key] !== "object" ? row[key] : formatDate(row[key]) }</td>
                 ))}
               </tr>
             ))}

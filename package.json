@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"private": true,
 	"scripts": {
+		"local-host": "next start -H 10.199.185.109 -p 5454",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",

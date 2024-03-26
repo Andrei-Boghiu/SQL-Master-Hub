@@ -31,7 +31,7 @@ const Carousel = ({ pages }) => {
 								</div>
 
 								{page.practice && (
-									<Link target="_blank" href="/practice">
+									<Link className={styles.link} target="_blank" href="/practice">
 										Practice This Code
 									</Link>
 								)}

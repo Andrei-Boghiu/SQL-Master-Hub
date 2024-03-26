@@ -4,10 +4,6 @@ import Loading from "./loading";
 
 // To Be Completed when I find a database
 const SchemaExplorer = ({ schemaResults }) => {
-  console.log(`-----`);
-  console.log(schemaResults);
-  console.log(`-----`);
-
   return (
     <div className={styles.container}>
       <div className={styles.head}>

@@ -50,11 +50,15 @@
 	.title {
 		font-size: 44px;
 	}
+	
 }
 
 @media (max-width: 1366px) {
 	.title {
 		font-size: 34px;
+	}
+	.subtitle {
+		font-size: small;
 	}
 }
 
@@ -64,8 +68,14 @@
 		padding-left: 20px;
 		padding-right: 20px;
 	}
+	.title {
+		font-size: 24px;
+	}
+	.subtitle {
+		font-size: smaller;
+	}
 }
-
+/* 
 @media (max-width: 1024px) {
 	.container {
 		width: 768px;
@@ -87,4 +97,4 @@
 	.container {
 		width: 380px;
 	}
-}
+} */

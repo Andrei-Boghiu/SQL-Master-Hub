@@ -14,6 +14,42 @@
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Structure Format",
+				"descriptions": [
+					"Data in a database is organized in a structured format using tables, rows, and columns, which allows for efficient storage and retrieval"
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Management System",
+				"descriptions": [
+					"A Database Management System (DBMS) is a software that allows users to interact with the database by providing functionalities for creating, querying, updating, and deleting data"
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 4,
+				"title": "Scalability and Security",
+				"descriptions": [
+					"Databases are designed to accommodate large volumes of data and offer various security features to control access to the data, ensuring that only authorized users are able to view or modify data"
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 5,
+				"title": "Querying",
+				"descriptions": [
+					"Users can retrieve specific information from the database using queries written in a query language named SQL"
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
 			}
 		]
 	},
@@ -26,8 +62,30 @@
 				"id": 1,
 				"title": "Definition",
 				"descriptions": [
-					"A programming language used to interact with databases.",
-					"Understand the importance of selecting the right DBMS for your specific needs."
+					"SQL (Structured Query Language) is a powerful programming language designed for managing and manipulating relational databases",
+					"It serves as a standard for interacting with Databases Management Systems (DBMS), enameling users to create, read, update, and delete data",
+					"SQL is renowned for its simplicity and declarative nature, allowing users to express complex operations on a database with human-readable syntax"
+					
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Data Querying",
+				"descriptions": [
+					"SQL allows user to retrieve specific data from a database using SELECT statements.",
+					"Users can filter, sort, and aggregate data to obtain the desired information."
+					
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Data Manipulation",
+				"descriptions": [
+					"SQL provides commands for manipulating data such as updating, adding, or removing data."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"
@@ -41,18 +99,6 @@
 		"pages": [
 			{
 				"id": 1,
-				"title": "DML (Data Manipulation Language)",
-				"descriptions": [
-					"SELECT: retrieves data from one or more tables.",
-					"INSERT INTO: add new records into a table.",
-                    "UPDATE: modifies existing records in a table.",
-                    "DELETE: removes records from a table."
-				],
-				"practice": false,
-				"image": "/learn/chapter-one-sections-one"
-			},
-			{
-				"id": 2,
 				"title": "DDL(Data Definition Language)",
 				"descriptions": [
 					"CREATE: creates a new database, table, etc.",
@@ -64,11 +110,23 @@
 				"image": "/learn/chapter-one-sections-one"
 			},
 			{
-				"id": 3,
+				"id": 2,
 				"title": "DCL (Data Control Language)",
 				"descriptions": [
 					"GRANT: provides specific privileges to users or roles.",
 					"REVOKE: removes specific privileges from users or roles."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "DML (Data Manipulation Language)",
+				"descriptions": [
+					"SELECT: retrieves data from one or more tables.",
+					"INSERT INTO: add new records into a table.",
+                    "UPDATE: modifies existing records in a table.",
+                    "DELETE: removes records from a table."
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -88,15 +146,22 @@
 					"The Relational Model organizes data into Tables, where each table has a set of Columns and Rows.",
                     "Each column representing a specific attribute of field, and each row represents a unique record of data."
 				],
-				"practice": false,
+				"practice": true,
 				"image": "/learn/chapter-one-sections-one"
 			},
 			{
 				"id": 2,
-				"title": "Primary and Foreign key",
+				"title": "Primary Key",
 				"descriptions": [
-					"PRIMARY KEY constraint uniquely identifies each record in a table and must contain UNIQUE values, and cannot contain NULL values.",
-					"A FOREIGN KEY  is a field on one table, that refers to the PRIMARY KEY in another table. A table can have only one primary key and multiple foreign keys; and in the table, this primary key can consist of single or multiple columns (fields)."
+					"PRIMARY KEY constraint uniquely identifies each record in a table and must contain UNIQUE values, and cannot contain NULL values."				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Foreign Key",
+				"descriptions": [
+					"A FOREIGN KEY is a field on one table, that refers to the PRIMARY KEY in another table. A table can have only one primary key and multiple foreign keys; and in the table, this primary key can consist of single or multiple columns (fields)."
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -123,9 +188,9 @@
 				"id": 2,
 				"title": "Examples",
 				"descriptions": [
-					"Email account: one to one: phone number",
-					"Book: one to many: reviews.",
-                    "Book: many ro many: authors."
+					"One to one: An account can have only one email address, two accounts cannot have the same email address.",
+					"One to many: One book can have many reviews but a review can only be associated with one book.",
+                    "Many to many: A student can enroll in multiple courses, and a course can have multiple students enrolled in it"
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -174,7 +239,8 @@
 				"id": 4,
 				"title": "Boolean",
 				"descriptions": [
-					"True and False values."	
+					"True and False values.",
+					"Example: column 'isWebsiteVisible' can be true or false"	
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -193,20 +259,28 @@
 					"SELECT: Defines which columns to return",
 					"FROM: Specifies the tables from which you want to retrieve data.",
                     "WHERE: Filters the results based on specific conditions",
-                    "LIMIT:The LIMIT clause is used to specify the number of records to return."
+                    "LIMIT: The LIMIT clause is used to specify the number of records to return."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"
 			},
 			{
 				"id": 2,
-				"title": "Wildcard characters",
+				"title": "Wildcard characters Definition",
 				"descriptions": [
 					"A wildcard character is used to substitute one or more characters in a string",
-					"Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
-                    "* Represents select all the data in the table",
-                    "% Represents zero or more characters.",
-                    "_ Represents a single character."
+					"Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Wildcard characters Examples",
+				"descriptions": [
+                    "'*' Represents select all the data in the table",
+                    "'%' Represents zero or more characters.",
+                    "'_' Represents a single character."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"
@@ -220,7 +294,7 @@
 		"pages": [
 			{
 				"id": 1,
-				"title": "Essential logicl operator",
+				"title": "Essential Logical Operator",
 				"descriptions": [
 					"AND: combines conditions, requiring all to be true for a record to be selected.",
 					"OR: operator combines conditions, requiring at least one to be true for a record to be selected.",
@@ -271,7 +345,7 @@
 				"id": 1,
 				"title": "Definition",
 				"descriptions": [
-					"An SQL JOIN  clause is used to combine rows from two or more tables, based on a related column between them."
+					"An SQL JOIN clause is used to combine rows from two or more tables, based on a related column between them."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"

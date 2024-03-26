@@ -20,7 +20,7 @@ const LearnPage = () => {
 				</p>
 				<p>#FirstQueryQuest</p>
 				<Link className={styles.linkBtn} href="/learn/chapter/1">
-					Start With Chapter 1
+					Start With Chapter One
 				</Link>
 			</div>
 			<div className={styles.imgContainer}>
