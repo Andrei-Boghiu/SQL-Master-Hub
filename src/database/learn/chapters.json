@@ -1,317 +1,366 @@
 [
-    {
-        "chapterNr": 1,
-        "subtitle": "Chapter One",
-        "title": "What is a Database?",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Definition",
-                "descriptions": [
-                    "A collection of data.",
-                    "It's like a Phonebook with lots of names, addresses and phone numbers.",
-                    "A method for accessing and manipulating method"
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 2,
-        "subtitle": "Chapter Two",
-        "title": "What is SQL?",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Definition",
-                "descriptions": [
-                    "A programming language used to interact with databases.",
-                    "Understand the importance of selecting the right DBMS for your specific needs."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 3,
-        "subtitle": "Chapter Three",
-        "title": "SQL Statement Types",
-        "pages": [
-            {
-                "id": 1,
-                "title": "DML (Data Manipulation Language)",
-                "descriptions": [
-                    "SELECT: retrieves data from one or more tables.",
-                    "INSERT INTO: add new records into a table.",
-                    "UPDATE: modifies existing records in a table.",
-                    "DELETE: removes records from a table."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "DDL(Data Definition Language)",
-                "descriptions": [
-                    "CREATE: creates a new database, table, etc.",
-                    "ALTER: modifies an existing database,table, etc.",
-                    "DROP: deletes an existing database, table, etc",
-                    "TRUNCATE: removes all records from a table, but keeps the structure intact."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 3,
-                "title": "DCL (Data Control Language)",
-                "descriptions": [
-                    "GRANT: provides specific privileges to users or roles.",
-                    "REVOKE: removes specific privileges from users or roles."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 4,
-        "subtitle": "Chapter Four",
-        "title": "Relational Databases",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Definition",
-                "descriptions": [
-                    "A relational database is a structured way of storing and managing data that follows the Relational Model.",
-                    "The Relational Model organizes data into Tables, where each table has a set of Columns and Rows.",
-                    "Each column representing a specific attribute of field, and each row represents a unique record of data."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Primary and Foreign key",
-                "descriptions": [
-                    "PRIMARY KEY constraint uniquely identifies each record in a table and must contain UNIQUE values, and cannot contain NULL values.",
-                    "A FOREIGN KEY  is a field on one table, that refers to the PRIMARY KEY in another table. A table can have only one primary key and multiple foreign keys; and in the table, this primary key can consist of single or multiple columns (fields)."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 5,
-        "subtitle": "Chapter Five",
-        "title": "Relationships between data",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Different ways data can be related",
-                "descriptions": [
-                    "One to one: Where one record from one table is associated with exactly one record from another table.",
-                    "One to many: Where one record from one table can be associated with multiple records from another table.",
-                    "Many to many: Where each record from one table can be associated with multiple records from another table, and vice versa."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Examples",
-                "descriptions": [
-                    "Email account: one to one: phone number",
-                    "Book: one to many: reviews.",
-                    "Book: many ro many: authors."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 6,
-        "subtitle": "Chapter Six",
-        "title": "Data Types",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Numeric Types",
-                "descriptions": [
-                    "INT(size): A medium integer. Signed range is from -2147483648 to 2147483647. Unsigned range is from 0 to 4294967295.",
-                    "SMALLINT(size) - A small integer. Signed range is from -32768 to 32767. Unsigned range is from 0 to 65535.",
-                    "DECIMAL(size, d) - An exact fixed-point number. The total number of digits is specified in size. The number of digits after the decimal point is specified in the d parameter."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Character String Types",
-                "descriptions": [
-                    "VARCHAR(0 to 65535): A VARIABLE length string (letters, numbers, and special characters)",
-                    "CHAR(0 to 255): A FIXED length string (letters, numbers, and special characters)."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 3,
-                "title": "Date and Time Types",
-                "descriptions": [
-                    "DATE - A date. Format: YYYY-MM-DD.",
-                    "TIME - A time. Format: hh:mm:ss.",
-                    "DATETIME - A date and time combination. Format: YYYY-MM-DD hh:mm:ss.",
-                    "TIMESTAMP - A timestamp. TIMESTAMP values are stored as the number of seconds since the Unix epoch."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 4,
-                "title": "Boolean",
-                "descriptions": [
-                    "True and False values."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 7,
-        "subtitle": "Chapter Seven",
-        "title": "SQL Essential clauses and wildcards",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Essential clauses",
-                "descriptions": [
-                    "SELECT: Defines which columns to return",
-                    "FROM: Specifies the tables from which you want to retrieve data.",
-                    "WHERE: Filters the results based on specific conditions",
-                    "LIMIT:The LIMIT clause is used to specify the number of records to return."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Wildcard characters",
-                "descriptions": [
-                    "A wildcard character is used to substitute one or more characters in a string",
-                    "Wildcard characters are used with the LIKE operator. The LIKE operator is used in a WHERE clause to search for a specified pattern in a column.",
-                    "* Represents select all the data in the table",
-                    "% Represents zero or more characters.",
-                    "_ Represents a single character."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 8,
-        "subtitle": "Chapter Eight",
-        "title": "Logical operators",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Essential logicl operator",
-                "descriptions": [
-                    "AND: combines conditions, requiring all to be true for a record to be selected.",
-                    "OR: operator combines conditions, requiring at least one to be true for a record to be selected.",
-                    "NOT: negates a condition."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 9,
-        "subtitle": "Chapter Nine",
-        "title": "Aggregate functions",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Essential function",
-                "descriptions": [
-                    "SUM(): returns the total sum of a numeric column.",
-                    "MAX(): returns the largest value of the selected column.",
-                    "COUNT(): function returns the number of rows that match a specified criteria.",
-                    "AVG(): returns the average of values in a column."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Essential keyword and statements",
-                "descriptions": [
-                    "Select Distinct: used to return only different values.",
-                    "Order By: used to sort the result-set in ascending or descending order.",
-                    "Group By: groups rows that have the same values intro summary rows",
-                    "Having clause: used with aggregate functions as WHERE keyword can't be used with aggregate functions."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    },
-    {
-        "chapterNr": 10,
-        "subtitle": "Chapter ten",
-        "title": "Join clause",
-        "pages": [
-            {
-                "id": 1,
-                "title": "Definition",
-                "descriptions": [
-                    "An SQL JOIN  clause is used to combine rows from two or more tables, based on a related column between them."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 2,
-                "title": "Right Join",
-                "descriptions": [
-                    "RIGHT JOIN returns all records from the right table (Table B) and the matched records from the left table (Table A)."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 3,
-                "title": "Left Join",
-                "descriptions": [
-                    "LEFT JOIN returns all records from the left table (Table A) and the matched records from the right table (Table B)."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 4,
-                "title": "Inner Join",
-                "descriptions": [
-                    "INNER JOIN returns records that have matching values in both tables."
-                ],
-                "practice": true,
-                "image": "/learn/chapter-one-sections-one"
-            },
-            {
-                "id": 5,
-                "title": "Full Join",
-                "descriptions": [
-                    "FULL JOIN returns all records where there is a match in either left (Table A) or right (Table B) table."
-                ],
-                "practice": false,
-                "image": "/learn/chapter-one-sections-one"
-            }
-        ]
-    }
+	{
+		"chapterNr": 1,
+		"subtitle": "Chapter One",
+		"title": "Understanding Databases",
+		"pages": [
+			{
+				"id": 1,
+				"title": "What is a Database?",
+				"descriptions": [
+					"A database is a structured collection of data that is organized and managed to facilitate efficient retrieval and manipulation.",
+					"It can be likened to a digital filing cabinet, storing various types of information such as names, addresses, transactions, and more.",
+					"A database provides a method for storing, accessing, and managing data in a systematic way, enabling users to easily query and modify information."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Database Structure and Format",
+				"descriptions": [
+					"Data in a database is structured into tables, which consist of rows and columns.",
+					"This tabular format allows for the organization of data into logical units, making it easier to store and retrieve information efficiently.",
+					"A database management system (DBMS) is software that provides tools for creating, querying, updating, and deleting data in a database."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Database Management Systems",
+				"descriptions": [
+					"A Database Management System (DBMS) is software designed to manage databases, providing users with a set of tools and interfaces for interacting with data.",
+					"These systems enable users to create, query, update, and delete data, ensuring data integrity and security.",
+					"Popular examples of DBMS include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 4,
+				"title": "Scalability and Security",
+				"descriptions": [
+					"Databases are designed to scale with growing data volumes, ensuring that they can accommodate increasing amounts of information without sacrificing performance.",
+					"Security measures such as user authentication, access control, and encryption are implemented to safeguard data from unauthorized access and breaches.",
+					"These security features help ensure that only authorized users can view, modify, or delete data, protecting the confidentiality and integrity of information stored in the database."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 5,
+				"title": "Querying Data",
+				"descriptions": [
+					"Users can retrieve specific information from a database using queries written in Structured Query Language (SQL).",
+					"SQL provides a standardized language for interacting with databases, allowing users to perform operations such as selecting, filtering, and sorting data.",
+					"By writing SQL queries, users can extract meaningful insights from the data stored in the database, enabling informed decision-making and analysis."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 2,
+		"subtitle": "Chapter Two",
+		"title": "Understanding SQL",
+		"pages": [
+			{
+				"id": 1,
+				"title": "What is SQL?",
+				"descriptions": [
+					"SQL (Structured Query Language) is a powerful programming language used for managing and manipulating relational databases.",
+					"It serves as a standardized method for interacting with Database Management Systems (DBMS), enabling users to create, read, update, and delete data.",
+					"SQL is renowned for its simplicity and declarative nature, allowing users to express complex operations on a database with human-readable syntax."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Data Querying with SQL",
+				"descriptions": [
+					"SQL allows users to retrieve specific data from a database using SELECT statements.",
+					"Users can filter, sort, and aggregate data to obtain the desired information.",
+					"By writing SQL queries, users can specify the exact data they want to retrieve and perform complex operations on the dataset."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Data Manipulation with SQL",
+				"descriptions": [
+					"SQL provides commands for manipulating data, such as updating, adding, or removing records from a database.",
+					"Users can modify the contents of a database by executing SQL statements that perform actions like inserting new data, updating existing data, or deleting unwanted data.",
+					"SQL's data manipulation capabilities allow users to maintain the accuracy and relevance of the data stored in the database."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 3,
+		"subtitle": "Chapter Three",
+		"title": "Understanding SQL Statement Types",
+		"pages": [
+			{
+				"id": 1,
+				"title": "DDL (Data Definition Language)",
+				"descriptions": [
+					"DDL commands are used to define the structure and schema of a database.",
+					"Commands like CREATE, ALTER, DROP, and TRUNCATE are part of DDL and are used to create, modify, and delete database objects such as tables, indexes, and constraints.",
+					"These commands are essential for setting up and managing the structure of a database."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "DCL (Data Control Language)",
+				"descriptions": [
+					"DCL commands are used to control access to data within a database.",
+					"Commands like GRANT and REVOKE are part of DCL and are used to grant or revoke permissions and privileges on database objects to users and roles.",
+					"These commands help ensure that data access is restricted to authorized users and that data security is maintained."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "DML (Data Manipulation Language)",
+				"descriptions": [
+					"DML commands are used to manipulate data within a database.",
+					"Commands like SELECT, INSERT INTO, UPDATE, and DELETE are part of DML and are used to retrieve, add, modify, and remove data from database tables.",
+					"These commands enable users to perform various operations on the data stored in the database, such as querying for specific information, inserting new records, updating existing records, and deleting unwanted records."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 4,
+		"subtitle": "Chapter Four",
+		"title": "Understanding Relational Databases",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Definition",
+				"descriptions": [
+					"A relational database is a type of database that organizes data into tables, with each table consisting of rows and columns.",
+					"The relational model, proposed by Edgar F. Codd in 1970, defines how data in a database can be related to one another through primary and foreign key relationships.",
+					"Relational databases are widely used in various applications due to their flexibility, scalability, and ability to model complex relationships between data entities."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Primary Key",
+				"descriptions": [
+					"A primary key is a unique identifier for each record in a table.",
+					"It ensures that each row in the table is uniquely identifiable and helps establish relationships between tables.",
+					"Primary keys are typically implemented using one or more columns in a table, and they enforce data integrity by preventing duplicate or null values."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Foreign Key",
+				"descriptions": [
+					"A foreign key is a column or set of columns in one table that refers to the primary key in another table.",
+					"It establishes a relationship between the two tables, allowing data to be linked across multiple tables.",
+					"Foreign keys enforce referential integrity, ensuring that data remains consistent and accurate across related tables."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 5,
+		"subtitle": "Chapter Five",
+		"title": "Understanding Relationships between Data",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Types of Data Relationships",
+				"descriptions": [
+					"Data relationships define how data entities are related to one another in a database schema.",
+					"Common types of data relationships include one-to-one, one-to-many, and many-to-many relationships, each representing different patterns of association between data entities."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Examples of Data Relationships",
+				"descriptions": [
+					"One-to-one: An example of a one-to-one relationship is between a person and their passport information, where each person has only one passport.",
+					"One-to-many: An example of a one-to-many relationship is between a customer and their orders, where each customer can have multiple orders.",
+					"Many-to-many: An example of a many-to-many relationship is between students and courses, where each student can enroll in multiple courses, and each course can have multiple students."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 6,
+		"subtitle": "Chapter Six",
+		"title": "Understanding Data Types",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Numeric Data Types",
+				"descriptions": [
+					"Numeric data types are used to store numerical values in a database.",
+					"Common numeric data types include INTEGER, DECIMAL, and FLOAT, each with its own range and precision.",
+					"These data types are suitable for storing numeric data such as integers, decimals, and floating-point numbers."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Character String Data Types",
+				"descriptions": [
+					"Character string data types are used to store text or string values in a database.",
+					"Common character string data types include VARCHAR and CHAR, which differ in their handling of variable-length and fixed-length strings.",
+					"These data types are suitable for storing textual data such as names, addresses, and descriptions."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 3,
+				"title": "Date and Time Data Types",
+				"descriptions": [
+					"Date and time data types are used to store temporal values such as dates and times in a database.",
+					"Common date and time data types include DATE, TIME, DATETIME, and TIMESTAMP, each representing different aspects of temporal data.",
+					"These data types are suitable for storing date-related information such as birthdays, appointment times, and transaction timestamps."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 4,
+				"title": "Boolean Data Type",
+				"descriptions": [
+					"The boolean data type is used to store binary values representing true or false.",
+					"It is commonly used to represent logical conditions or binary states in a database.",
+					"For example, a boolean column might indicate whether a product is in stock (true) or out of stock (false)."
+				],
+				"practice": false,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 7,
+		"subtitle": "Chapter Seven",
+		"title": "Understanding SQL Essential Clauses and Wildcards",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Essential SQL Clauses",
+				"descriptions": [
+					"SQL queries consist of essential clauses that define the scope and conditions of the query.",
+					"The SELECT clause specifies which columns to retrieve from the database.",
+					"The FROM clause specifies the tables from which to retrieve data.",
+					"The WHERE clause filters the result set based on specified conditions.",
+					"The LIMIT clause restricts the number of rows returned by the query, useful for pagination or limiting large result sets."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Wildcard Characters in SQL",
+				"descriptions": [
+					"SQL supports wildcard characters that can be used to substitute one or more characters in a string when searching for patterns.",
+					"The '%' wildcard represents zero or more characters, allowing for flexible pattern matching.",
+					"The '_' wildcard represents a single character, useful for precise pattern matching.",
+					"The '*' wildcard is commonly used to select all columns in a table or all rows in a result set."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 8,
+		"subtitle": "Chapter Eight",
+		"title": "Understanding Logical Operators in SQL",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Logical Operators Overview",
+				"descriptions": [
+					"Logical operators in SQL are used to combine or modify conditions in queries.",
+					"The AND operator requires all specified conditions to be true for a row to be included in the result set.",
+					"The OR operator requires at least one of the specified conditions to be true for a row to be included in the result set.",
+					"The NOT operator negates a condition, returning rows that do not match the specified condition."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 9,
+		"subtitle": "Chapter Nine",
+		"title": "Understanding Aggregate Functions in SQL",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Aggregate Functions Overview",
+				"descriptions": [
+					"Aggregate functions in SQL are used to perform calculations on sets of values and return a single result.",
+					"The SUM() function calculates the total sum of a numeric column.",
+					"The MAX() function returns the largest value in a column.",
+					"The COUNT() function returns the number of rows that match a specified criteria.",
+					"The AVG() function returns the average value of a numeric column."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			},
+			{
+				"id": 2,
+				"title": "Additional Keywords and Statements",
+				"descriptions": [
+					"The SELECT DISTINCT keyword is used to return only unique values in a result set.",
+					"The ORDER BY clause is used to sort the result set in ascending or descending order based on specified columns.",
+					"The GROUP BY clause is used to group rows that have the same values into summary rows.",
+					"The HAVING clause filters groups based on specified conditions, similar to the WHERE clause but for aggregate functions."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	},
+	{
+		"chapterNr": 10,
+		"subtitle": "Chapter Ten",
+		"title": "Understanding SQL Join Clauses",
+		"pages": [
+			{
+				"id": 1,
+				"title": "Join Clauses Overview",
+				"descriptions": [
+					"SQL join clauses are used to combine rows from two or more tables based on related columns.",
+					"The INNER JOIN clause returns rows that have matching values in both tables.",
+					"The LEFT JOIN clause returns all rows from the left table and the matched rows from the right table, with NULL values for unmatched rows.",
+					"The RIGHT JOIN clause returns all rows from the right table and the matched rows from the left table, with NULL values for unmatched rows.",
+					"The FULL JOIN clause returns all rows from both tables, with NULL values for unmatched rows."
+				],
+				"practice": true,
+				"image": "/learn/chapter-one-sections-one"
+			}
+		]
+	}
 ]

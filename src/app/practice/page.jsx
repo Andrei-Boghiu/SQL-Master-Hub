@@ -8,7 +8,6 @@ import { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-
 const Practice = () => {
 	const [query, setQuery] = useState("");
 	const [queryResult, setQueryResult] = useState(null);
@@ -20,14 +19,14 @@ const Practice = () => {
 	};
 
 	const updateSchema = async () => {
-		console.log("Not connected to a db...")
+		console.log("Not connected to a db...");
 		// const schema = await fetchSchemaResults();
 		// console.log(schema);
 		// setSchemaResults(schema);
 	};
 
 	const executeQuery = async () => {
-		console.log("Not connected to a db...")
+		console.log("Not connected to a db...");
 		// setLoading(true);
 		// const res = await executeSelectQuery(query);
 		// setQueryResult(res);
@@ -42,7 +41,14 @@ const Practice = () => {
 
 	return (
 		<div className={styles.container}>
-			<div className={styles.schema}>
+			<h2 className={styles.subtitle}>Coming Soon!</h2>
+			<h1 className={styles.title}>Our practice page isn't ready yet 😔</h1>
+			<p className={styles.desc}>
+				The jedi team is actively fighting with dark forces (frugality) in order to recapture our beloved practice playground. 👾🔫
+			</p>
+			<p>#SQLJediFall</p>
+
+			{/* <div className={styles.schema}>
 				<Suspense fallback={<Loading />}>
 					<SchemaExplorer schemaResults={schemaResults} />
 				</Suspense>
@@ -56,7 +62,7 @@ const Practice = () => {
 				<Suspense fallback={<Loading />}>
 					<QueryResults queryResults={queryResult} />
 				</Suspense>
-			</div>
+			</div> */}
 		</div>
 	);
 };
