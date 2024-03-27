@@ -7,8 +7,7 @@ import SchemaExplorer from "@/components/schemaExplorer/schemaExplorer";
 import { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./loading";
-import fetchSchemaResults from "@/database/fetchSchemaResults";
-import executeSelectQuery from "@/database/executeSelectQuery";
+
 
 const Practice = () => {
 	const [query, setQuery] = useState("");
@@ -21,15 +20,18 @@ const Practice = () => {
 	};
 
 	const updateSchema = async () => {
-		const schema = await fetchSchemaResults();
-		setSchemaResults(schema);
+		console.log("Not connected to a db...")
+		// const schema = await fetchSchemaResults();
+		// console.log(schema);
+		// setSchemaResults(schema);
 	};
 
 	const executeQuery = async () => {
-		setLoading(true);
-		const res = await executeSelectQuery(query);
-		setQueryResult(res);
-		setLoading(false);
+		console.log("Not connected to a db...")
+		// setLoading(true);
+		// const res = await executeSelectQuery(query);
+		// setQueryResult(res);
+		// setLoading(false);
 	};
 
 	useEffect(() => {
