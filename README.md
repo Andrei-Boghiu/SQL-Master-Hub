@@ -1,11 +1,11 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SQL Master Hub
+
+## About
+This is a project built for sql enthusiasts in need of a place where they can practice sql safely.
 
 ## Getting Started
+At the moment I'm facing issues finding a reliable database provider in order to allow users to play with the practice area. The workaround found at the moment is to create a local MySQL server and connect it with this project with the help of mysql2
 
-...
+## Next Steps
+This project is in continuous development and is planning to be released as a free sql playground for learners. 
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
