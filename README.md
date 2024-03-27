@@ -5,8 +5,8 @@ SQL Master Hub is an open-source project aimed at providing a comprehensive lear
 ## Features
 
 - **Structured Learning**: Dive into structured chapters covering fundamental SQL concepts, database management, query writing, and more.
-- **Interactive Exercises**: Practice your SQL skills with interactive exercises designed to reinforce learning and improve proficiency.
-- **Real-world Examples**: Explore real-world examples and scenarios to understand how SQL is used in practical applications.
+- **Interactive Exercises**: Practice your SQL skills with interactive exercises designed to reinforce learning and improve proficiency. (Work-in-Progress)
+- **Real-world Examples**: Explore real-world examples and scenarios to understand how SQL is used in practical applications. (Work-in-Progress)
 - **Contributions Welcome**: We welcome contributions from the community to enhance and expand SQL Master Hub's content.
 
 ## Getting Started
@@ -28,6 +28,6 @@ Please note that SQL Master Hub has a Code of Conduct. We expect all contributor
 
 ## Contact
 
-For questions, suggestions, or further assistance, you can reach out to us on [LinkedIn](/andreiboghiu).
+For questions, suggestions, or further assistance, you can reach out to us on [LinkedIn](https://www.linkedin.com/in/andreiboghiu/).
 
 Thank you for your interest in SQL Master Hub!
