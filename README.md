@@ -9,3 +9,5 @@ At the moment I'm facing issues finding a reliable database provider in order to
 ## Next Steps
 This project is in continuous development and is planning to be released as a free sql playground for learners. 
 
+## Live View
+A live version of the platform can be found [here](https://sql-master-hub.vercel.app/)
