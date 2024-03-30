@@ -10,10 +10,6 @@ Before contributing, please take a moment to review the following guidelines:
 - Fork the repository on GitHub.
 - Clone your forked repository locally using Git.
 
-## Database Hosting Issue
-
-We are currently facing challenges finding a feasible database hosting solution for the practice area of SQL Master Hub. As part of our learning platform, we aim to provide a practical environment for users to apply their SQL skills, but we're struggling to find an appropriate hosting solution that aligns with our requirements.
-
 ### Details
 
 - We need a hosting solution that allows for easy setup and management of SQL databases.
@@ -53,4 +49,3 @@ Please note that SQL Master Hub has a Code of Conduct. By participating in this 
 ## Contact
 
 If you have any questions or need further assistance, please feel free to contact us on [Linkedin](https://www.linkedin.com/in/andreiboghiu/).
-

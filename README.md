@@ -14,10 +14,6 @@ SQL Master Hub is an open-source project aimed at providing a comprehensive lear
 A live version can be found [here](https://sql-master-hub.vercel.app/)
 To get started with SQL Master Hub, simply clone the repository to your local machine and start exploring the chapters and exercises. If you encounter any issues or have suggestions for improvement, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide.
 
-## Database Hosting
-
-We are currently seeking assistance in finding a feasible database hosting solution for the practice area of SQL Master Hub. If you have experience with database hosting solutions or know of any services that could suit our needs, please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide for more information.
-
 ## Contributing
 
 We welcome contributions to SQL Master Hub! Whether it's fixing bugs, adding new features, improving documentation, or providing database hosting solutions, your contributions are valuable to the community. Please refer to the [CONTRIBUTING.md](CONTRIBUTING.md) guide for guidelines on contributing.
