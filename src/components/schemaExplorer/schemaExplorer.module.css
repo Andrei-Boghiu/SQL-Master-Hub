@@ -13,22 +13,18 @@
 
 .title {
 	margin: 0 12px 8px;
-
 }
 
 .desc {
 	margin: 0 14px 0;
 	font-size: small;
 	color: var(--border);
-
-
 }
 
 .tableList {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
-
 }
 
 .table {
@@ -45,4 +41,38 @@
 
 .loading {
 	margin: 14px auto 0;
+}
+
+/* TO BE CHANGED */
+
+/* styles.module.css */
+
+.table-summary {
+	font-family: Arial, sans-serif;
+	margin: 15px;
+}
+
+.details {
+	margin-bottom: 10px;
+}
+
+.summary {
+	cursor: pointer;
+	outline: none;
+	font-weight: bold;
+	color: #007bff;
+}
+
+.summary::-webkit-details-marker {
+	display: none;
+}
+
+.ul {
+	margin-left: 20px;
+	list-style: none;
+}
+
+.li {
+	margin-bottom: 5px;
+	margin-left: 15px;
 }

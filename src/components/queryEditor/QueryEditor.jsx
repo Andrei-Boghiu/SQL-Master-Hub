@@ -55,19 +55,26 @@ const QueryEditor = ({ query, onQueryChange, executeQuery, loading }) => {
 			</div>
 
 			<div className={styles.buttons}>
-				<button className={styles.button} onClick={executeQuery}>
+				<button
+					className={styles.button}
+					onClick={executeQuery}>
 					Execute Query
 				</button>
 				<div className={styles.selectOption}>
-					<select id="mySelect" value={fontSize} onChange={handleFontSizeChange}>
+					<select
+						id="mySelect"
+						value={fontSize}
+						onChange={handleFontSizeChange}>
 						{fontSizes.map((font) => (
-							<option key={font} value={font}>
+							<option
+								key={font}
+								value={font}>
 								Font Size {font}
 							</option>
 						))}
 					</select>
 				</div>
-				{loading && <Spinner />}				
+				{loading && <Spinner />}
 			</div>
 		</div>
 	);

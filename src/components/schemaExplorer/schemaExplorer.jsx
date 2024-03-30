@@ -4,10 +4,6 @@ import Loading from "./loading";
 
 // To Be Completed when I find a database
 const SchemaExplorer = ({ schemaResults }) => {
-	// console.log(`-----`);
-	// console.log(schemaResults);
-	// console.log(`-----`);
-
 	return (
 		<div className={styles.container}>
 			<div className={styles.head}>
@@ -16,11 +12,22 @@ const SchemaExplorer = ({ schemaResults }) => {
 			</div>
 
 			{schemaResults ? (
-				<div className={styles.tableList}>
-					{schemaResults.map((tableObj, index) => (
-						<span className={styles.table} key={index}>
-							{Object.values(tableObj)[0]}
-						</span>
+				<div className={styles["table-summary"]}>
+					{schemaResults.map((table, index) => (
+						<details
+							key={index}
+							className={styles.details}>
+							<summary className={styles.summary}>{table.table_name}</summary>
+							<ul className={styles.ul}>
+								{table.columns.map((column, idx) => (
+									<li
+										key={idx}
+										className={styles.li}>
+										{column.column_name} ({column.data_type})
+									</li>
+								))}
+							</ul>
+						</details>
 					))}
 				</div>
 			) : (

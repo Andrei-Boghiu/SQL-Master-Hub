@@ -8,6 +8,8 @@ import { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
+import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/connect";
+
 const Practice = () => {
 	const [query, setQuery] = useState("");
 	const [queryResult, setQueryResult] = useState(null);
@@ -19,18 +21,22 @@ const Practice = () => {
 	};
 
 	const updateSchema = async () => {
-		console.log("Not connected to a db...");
-		// const schema = await fetchSchemaResults();
-		// console.log(schema);
-		// setSchemaResults(schema);
+		const response = await executeSchemaInfoQuery();
+		// ERROR HANDLER NEEDED
+		const responseObject = JSON.parse(response);
+
+		setSchemaResults(responseObject);
 	};
 
 	const executeQuery = async () => {
-		console.log("Not connected to a db...");
-		// setLoading(true);
-		// const res = await executeSelectQuery(query);
-		// setQueryResult(res);
-		// setLoading(false);
+		setLoading(true);
+
+		const response = await executeSelectQuery(query);
+		const responseObject = JSON.parse(response);
+
+		setQueryResult(responseObject);
+
+		setLoading(false);
 	};
 
 	useEffect(() => {
@@ -41,14 +47,7 @@ const Practice = () => {
 
 	return (
 		<div className={styles.container}>
-			<h2 className={styles.subtitle}>Coming Soon!</h2>
-			<h1 className={styles.title}>Our practice page isn't ready yet 😔</h1>
-			<p className={styles.desc}>
-				The jedi team is actively fighting with dark forces (frugality) in order to recapture our beloved practice playground. 👾🔫
-			</p>
-			<p>#SQLJediFall</p>
-
-			{/* <div className={styles.schema}>
+			<div className={styles.schema}>
 				<Suspense fallback={<Loading />}>
 					<SchemaExplorer schemaResults={schemaResults} />
 				</Suspense>
@@ -56,13 +55,18 @@ const Practice = () => {
 
 			<div className={styles.playground}>
 				<Suspense fallback={<Loading />}>
-					<QueryEditor query={query} onQueryChange={handleQueryChange} executeQuery={executeQuery} loading={loading} />
+					<QueryEditor
+						query={query}
+						onQueryChange={handleQueryChange}
+						executeQuery={executeQuery}
+						loading={loading}
+					/>
 				</Suspense>
 
 				<Suspense fallback={<Loading />}>
 					<QueryResults queryResults={queryResult} />
 				</Suspense>
-			</div> */}
+			</div>
 		</div>
 	);
 };

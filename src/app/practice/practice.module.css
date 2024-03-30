@@ -1,9 +1,9 @@
 .container {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	/* max-width: 1536px; */
 	/* gap: 20px; */
-	gap: 90px;
+	gap: 45px;
 }
 
 .schema {
