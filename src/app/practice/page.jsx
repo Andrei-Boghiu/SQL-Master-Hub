@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/connect";
+import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/railway";
 
 const Practice = () => {
 	const [query, setQuery] = useState("");
