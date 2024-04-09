@@ -20,7 +20,7 @@
 				"title": "Database Structure and Format",
 				"descriptions": [
 					"Data in a database is structured into tables, which consist of rows and columns.",
-					"This tabular format allows for the organization of data into logical units, making it easier to store and retrieve information efficiently.",
+					"This format allows for the organization of data into logical units, making it easier to store and retrieve information efficiently.",
 					"A database management system (DBMS) is software that provides tools for creating, querying, updating, and deleting data in a database."
 				],
 				"practice": false,
@@ -32,7 +32,7 @@
 				"descriptions": [
 					"A Database Management System (DBMS) is software designed to manage databases, providing users with a set of tools and interfaces for interacting with data.",
 					"These systems enable users to create, query, update, and delete data, ensuring data integrity and security.",
-					"Popular examples of DBMS include MySQL, PostgreSQL, Oracle, and Microsoft SQL Server."
+					"Popular examples of DBMS include MySQL, PostgreSQL, Oracle, Redshift, and Microsoft SQL Server."
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -43,7 +43,7 @@
 				"descriptions": [
 					"Databases are designed to scale with growing data volumes, ensuring that they can accommodate increasing amounts of information without sacrificing performance.",
 					"Security measures such as user authentication, access control, and encryption are implemented to safeguard data from unauthorized access and breaches.",
-					"These security features help ensure that only authorized users can view, modify, or delete data, protecting the confidentiality and integrity of information stored in the database."
+					"These security features help ensure that only authorized users can view, modify, or delete data"
 				],
 				"practice": false,
 				"image": "/learn/chapter-one-sections-one"
@@ -273,7 +273,7 @@
 					"The SELECT clause specifies which columns to retrieve from the database.",
 					"The FROM clause specifies the tables from which to retrieve data.",
 					"The WHERE clause filters the result set based on specified conditions.",
-					"The LIMIT clause restricts the number of rows returned by the query, useful for pagination or limiting large result sets."
+					"The LIMIT clause restricts the number of rows returned by the query."
 				],
 				"practice": true,
 				"image": "/learn/chapter-one-sections-one"
