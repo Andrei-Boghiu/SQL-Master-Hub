@@ -8,8 +8,8 @@ import { useState, useEffect } from "react";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-// import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/railway";
-import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/vercelPostgres";
+import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/railway";
+// import { executeSelectQuery, executeSchemaInfoQuery } from "@/database/practice/vercelPostgres";
 
 const Practice = () => {
 	const [query, setQuery] = useState("");
