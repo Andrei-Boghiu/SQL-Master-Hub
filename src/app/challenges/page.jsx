@@ -1,6 +1,6 @@
 "use client";
 import { getChallenges } from "@/database/challenges/methods";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import styles from "./challenges.module.css";
 
 const ChallengesPage = () => {
@@ -8,15 +8,18 @@ const ChallengesPage = () => {
     const [completed, setCompleted] = useState(false);
     const [skipped, setSkipped] = useState(false)
 
-    const isLocalStorage = localStorage.getItem("challengesCompleted");
 
-    if (!isLocalStorage) {
-        localStorage.setItem("challengesCompleted", "[]");
-    }
+    useEffect(() => {
+        const isLocalStorage = window.localStorage.getItem("challengesCompleted");
+
+        if (!isLocalStorage) {
+            window.localStorage.setItem("challengesCompleted", "[]");
+        }
+    }, [])
 
     function getRandomChallenge(allChallenges) {
         const randomNumber = Math.floor(Math.random() * allChallenges.length);
-        const storeString = localStorage.getItem("challengesCompleted");
+        const storeString = window.localStorage.getItem("challengesCompleted");
         const storage = storeString ? JSON.parse(storeString) : [];
         console.log("getRandomChallenge:");
         console.log(`New id: ${randomNumber}`);
@@ -44,7 +47,7 @@ const ChallengesPage = () => {
 
         if (!challengeDetails) {
             alert("All challenges were completed! Your progress will be deleted so you can revisit the challenges at any time");
-            localStorage.setItem("challengesCompleted", "[]")
+            window.localStorage.setItem("challengesCompleted", "[]")
             return;
         }
 
@@ -57,7 +60,7 @@ const ChallengesPage = () => {
         const storeString = localStorage.getItem("challengesCompleted");
         const storage = storeString ? JSON.parse(storeString) : [];
         const newStorage = [...storage, currentChallenge.id];
-        localStorage.setItem("challengesCompleted", JSON.stringify(newStorage));
+        window.localStorage.setItem("challengesCompleted", JSON.stringify(newStorage));
         setCurrentChallenge(undefined);
         setCompleted(true);
 
