@@ -19,6 +19,10 @@ const routes = [
 		path: "/learn",
 	},
 	{
+		title: "Challenges",
+		path: "/challenges",
+	},
+	{
 		title: "Practice Hub",
 		path: "/practice",
 	},

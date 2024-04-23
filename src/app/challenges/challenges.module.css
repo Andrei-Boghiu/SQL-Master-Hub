@@ -1,0 +1,54 @@
+.container {
+    display: flex;
+    gap: 100px;
+}
+
+.textContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.subtitle {
+    color: var(--btn);
+}
+
+.title {
+    font-size: 54px;
+}
+
+.desc {
+    color: whitesmoke;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+.button:first-child {
+    background-color: var(--btn);
+    color: var(--text);
+}
+
+.button {
+    font-size: 22px;
+    font-weight: 600;
+    padding: 10px;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

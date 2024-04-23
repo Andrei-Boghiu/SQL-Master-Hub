@@ -8,7 +8,6 @@ const organizeData = (data) => {
     const organized = [];
     const tables = {};
 
-    // Group data by table_name
     data.forEach((row) => {
         if (!tables[row.table_name]) {
             tables[row.table_name] = [];
@@ -16,7 +15,6 @@ const organizeData = (data) => {
         tables[row.table_name].push({ column_name: row.column_name, data_type: row.data_type });
     });
 
-    // Convert tables object into an array of objects
     for (const [tableName, columns] of Object.entries(tables)) {
         organized.push({ table_name: tableName, columns });
     }
@@ -29,7 +27,6 @@ export async function executeSelectQuery(queryString) {
         const client = await pool.connect();
 
         const result = await client.query(queryString);
-        // console.log(result);
 
         const { rows } = result;
 
@@ -46,7 +43,6 @@ export async function executeSchemaInfoQuery() {
     try {
         const client = await pool.connect();
 
-        // Get Schema information: available tables, columns, data types
         const result = await client.query(`
 							SELECT 
 									c.table_name,
