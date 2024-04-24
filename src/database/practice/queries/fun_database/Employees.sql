@@ -1,0 +1,43 @@
+CREATE TABLE Employees (
+    EmployeesID SERIAL PRIMARY KEY,
+    FirstName VARCHAR(100),
+    LastName VARCHAR(100),
+    Department VARCHAR(100),
+    Role VARCHAR(150),
+    Birthday DATE,
+    Photo VARCHAR(150),
+    Notes TEXT
+);
+
+INSERT INTO Employees (FirstName, LastName, Department, Role, Birthday, Photo, Notes) 
+VALUES 
+    ('Michael', 'Scott', 'Management', 'Regional Manager', '1965-03-15', 'photo1', 'World''s Best Boss Mug'),
+    ('Dwight', 'Schrute', 'Sales', 'Assistant Regional Manager', '1968-01-20', 'photo2', 'Beet Farming Enthusiast'),
+    ('Jim', 'Halpert', 'Sales', 'Sales Representative', '1978-10-01', 'photo3', 'Prankster Extraordinaire'),
+    ('Pam', 'Beesly', 'Reception', 'Receptionist', '1979-03-25', 'photo4', 'Artistic Sensibility'),
+    ('Angela', 'Martin', 'Accounting', 'Accountant', '1971-06-25', 'photo5', 'Cat Lover'),
+    ('Stanley', 'Hudson', 'Sales', 'Sales Representative', '1958-02-19', 'photo6', 'Crossword Puzzle Master'),
+    ('Phyllis', 'Vance', 'Sales', 'Sales Representative', '1951-04-07', 'photo7', 'Knitting Enthusiast'),
+    ('Kevin', 'Malone', 'Accounting', 'Accountant', '1968-06-20', 'photo8', 'Famous Chili Maker'),
+    ('Meredith', 'Palmer', 'Supplier Relations', 'Supplier Relations Representative', '1964-11-03', 'photo9', 'Partying Expert'),
+    ('Oscar', 'Martinez', 'Accounting', 'Accountant', '1970-05-11', 'photo10', 'Accounting Guru'),
+    ('Ryan', 'Howard', 'Temp', 'Temp', NULL, NULL, NULL),
+    ('Kelly', 'Kapoor', 'Customer Service', 'Customer Service Representative', NULL, NULL, NULL),
+    ('Andy', 'Bernard', 'Sales', 'Sales Representative', NULL, NULL, NULL),
+    ('Toby', 'Flenderson', 'HR', 'HR Representative', NULL, NULL, NULL),
+    ('Erin', 'Hannon', 'Reception', 'Receptionist', NULL, NULL, NULL),
+    ('Darryl', 'Philbin', 'Warehouse', 'Warehouse Foreman', NULL, NULL, NULL),
+    ('Creed', 'Bratton', 'Quality Assurance', 'Quality Assurance Representative', NULL, NULL, NULL),
+    ('Jan', 'Levinson', 'Corporate', 'VP of Northeast Sales', NULL, NULL, NULL),
+    ('David', 'Wallace', 'Corporate', 'CFO', NULL, NULL, NULL),
+    ('Gabe', 'Lewis', 'Customer Service', 'Customer Service Representative', NULL, NULL, NULL),
+    ('Holly', 'Flax', 'HR', 'HR Representative', NULL, NULL, NULL),
+    ('Charles', 'Miner', 'Corporate', 'VP of Northeast Sales', NULL, NULL, NULL),
+    ('Karen', 'Filippelli', 'Corporate', 'Regional Manager', NULL, NULL, NULL),
+    ('Nellie', 'Bertram', 'Sales', 'Sales Representative', NULL, NULL, NULL),
+    ('Deangelo', 'Vickers', 'Management', 'Regional Manager', NULL, NULL, NULL),
+    ('Robert', 'California', 'Management', 'CEO', NULL, NULL, NULL),
+    ('Jo', 'Bennett', 'Corporate', 'CEO', NULL, NULL, NULL),
+    ('Cathy', 'Simms', 'Sales', 'Sales Representative', NULL, NULL, NULL),
+    ('Brian', NULL, NULL, NULL, NULL, NULL, 'Documentary Crew'),
+    ('Billy', 'Merchant', 'Building', 'Building Manager', NULL, NULL, NULL);
