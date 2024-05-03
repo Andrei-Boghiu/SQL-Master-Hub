@@ -65,27 +65,27 @@
         "hint": "Use the LIKE operator with a wildcard pattern in the WHERE clause to search for the word 'product' in the description."
     },
     {
-        "id": 14,
+        "id": 13,
         "challenge": "Write a query to select the employee id and first name from the employees table, but only for employees whose last name ends with 'son'.",
         "hint": "Use the LIKE operator with a wildcard pattern in the WHERE clause to filter the last names."
     },
     {
-        "id": 15,
+        "id": 14,
         "challenge": "Write a query to select the full name of all the employees.",
         "hint": "Use google to find out how to concatenate two columns and the AS keyword in the SELECT statement to rename it."
     },
     {
-        "id": 16,
+        "id": 15,
         "challenge": "Write a query to select the supplier id and supplier name from the suppliers table, but only for suppliers whose supplier name doesn't contains a space character.",
         "hint": "Use the NOT LIKE operator with a wildcard pattern in the WHERE clause to search for the space character in the supplier name."
     },
     {
-        "id": 17,
+        "id": 16,
         "challenge": "Write a query to select the product name and unit from the products table, but only for products whose unit contains the word 'bottle'.",
         "hint": "Use the LIKE operator with a wildcard pattern in the WHERE clause to search for the word 'bottle' in the unit column."
     },
     {
-        "id": 18,
+        "id": 17,
         "challenge": "Write a query to select the customer name and city from the customers table, but only for customers located in the city of 'New York'.",
         "hint": "Use the equality operator in the WHERE clause to filter the city."
     }

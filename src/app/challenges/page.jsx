@@ -18,14 +18,16 @@ const ChallengesPage = () => {
     }, [])
 
     function getRandomChallenge(allChallenges) {
-        const randomNumber = Math.floor(Math.random() * allChallenges.length);
+        const ids = allChallenges.map((challenge) => challenge.id);
+        const randomNumber = Math.floor(Math.random() * ids.length);
+        const newRandomId = ids[randomNumber]
         const storeString = window.localStorage.getItem("challengesCompleted");
         const storage = storeString ? JSON.parse(storeString) : [];
         console.log("getRandomChallenge:");
-        console.log(`New id: ${randomNumber}`);
+        console.log(`New id: ${newRandomId}`);
         console.log(storage);
 
-        const isAlreadyCompleted = storage.includes(randomNumber);
+        const isAlreadyCompleted = storage.includes(newRandomId);
         console.log(`isAlreadyCompleted: ${isAlreadyCompleted}`);
 
         if (!isAlreadyCompleted) {
@@ -52,8 +54,6 @@ const ChallengesPage = () => {
         }
 
         setCurrentChallenge(challengeDetails);
-        console.log(challengeDetails);
-
     }
 
     function handleComplete() {
@@ -70,7 +70,6 @@ const ChallengesPage = () => {
     function handleSkip() {
         setCurrentChallenge(undefined);
         setSkipped(true);
-        console.log(JSON.parse(localStorage.getItem("challengesCompleted")))
     }
 
     return (
