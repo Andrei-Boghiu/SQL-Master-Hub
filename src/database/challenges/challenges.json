@@ -66,7 +66,7 @@
     },
     {
         "id": 13,
-        "challenge": "Write a query to select the employee id and first name from the employees table, but only for employees whose last name ends with 'son'.",
+        "challenge": "Write a query to select the employee id and first name from the employees table, but only for employees whose last name ends with 'an'.",
         "hint": "Use the LIKE operator with a wildcard pattern in the WHERE clause to filter the last names."
     },
     {
